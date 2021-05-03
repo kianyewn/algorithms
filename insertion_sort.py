@@ -5,13 +5,13 @@ def swap(lst, i, j):
     return lst
 
 
-# def insertion_sort(lst: list) -> list:
-#     for i in range(len(lst)):
-#         while i > 0 and lst[i - 1] > lst[i]:
-#             lst = swap(lst, i, i-1)
-#             i = i - 1
+def insertion_sort(lst: list) -> list:
+    for i in range(len(lst)):
+        while i > 0 and lst[i - 1] > lst[i]:
+            lst = swap(lst, i, i-1)
+            i = i - 1
 
-#     return lst
+    return lst
 
 
 def insertion_sort(lst: list) -> list:
