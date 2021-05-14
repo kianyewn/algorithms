@@ -105,7 +105,7 @@ def findMedianSortedArrays(nums1, nums2):
             if i == 0:
                 # CORRECT if i == 0, this means that the entire "left" parition is from nums2.
                 # WRONG if i == 0, this means that the entire  nums2 is inside the "left" parition.
-                # The above statement is wrong because j = half_length - i and not j = n, so the entire j will not be in the "left" partition.
+                # The above statement is wrong because j = half_length - i and not j = n, so the entire nums2 will not be in the "left" partition.
                 maxLeftNum = nums2[j - 1]
             # elif i == m: ## ** Important!: this statement should be checking for j == 0 (because we want to find the maximum value in the left partition)
                 # WRONG: if i ==m, this means that the entire "left" parition is from nums1.
