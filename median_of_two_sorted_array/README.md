@@ -36,3 +36,8 @@
     - 3. if i != m or j != n or i != 0 or j != 0:
       - then maximum value in the "left" parition = max(arr1[i-1], arr2[j-1])
       - then minimum value in the "right" = min(arr1[i], arr2[j])
+
+
+Resource:
+- https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/2481/Share-my-O(log(min(mn)))-solution-with-explanation
+- https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46
