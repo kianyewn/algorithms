@@ -1,4 +1,4 @@
-# Takeway
+# Takeways
 
 - The solution that I adopted was using the "merge" algorithm
 
