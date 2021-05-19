@@ -15,8 +15,8 @@
 - Main idea is to skip the merging of the two sorted arrays together.
   - The alternative solution uses binary search to find the index to partition the merged array into "left" and "right" partitions, where all the values in the "left" parition is less than or equals to the "right" partition
   
-  - This is done by using the smaller array as the input to the binary search, and also using the idea that the median is at the half_length(half the sum of the length of the 2 arrays) position. The trick is to create dependencies between two indexes i and j, where i is the index that decides how much of arr1 is in the "left" partition, and (j = half_length - i) is the index that decides how much of arr2 is in the "right" partition.
-    - The binary search makes use of the idea that we want to find a parition in arr1, such that for every element in arr1[:i] and arr2[:j] is less than or equals to arr1[i:] and arr2[j:]!
+  - This is done by using the smaller array as the input to the binary search, and also using the idea that the median is at the half_length(half the sum of the length of the 2 arrays) position. The trick is to create dependencies between two indexes i and j, where i is the index that decides how much of arr1 is in the "left" partition, and (j = half_length - i) is the index that decides how much of arr2 is also in the "left" partition.
+    - The binary search makes use of the idea that we want to find a parition in arr1, such that for every element in arr1[:i] and arr2[:j] is less than or equals to any element in arr1[i:] and arr2[j:]!
   
   - Note that if we were to use the formula (j = half_length - i), we have to ensure that j will always be positive, and this is where using i to represent the smaller array is extremely important!
 
